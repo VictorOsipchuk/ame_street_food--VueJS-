@@ -1,0 +1,168 @@
+{
+    "products": [
+        {
+            "name": "CLASSIC",
+            "discription": "Яловичина, сир чеддер, помідор, салат айсберг, майонез",
+            "image": "classic.jpg",
+            "price": 72,
+            "category": "burgers",
+            "id": "0001"
+        },
+        {
+            "name": "TWIN PEAKS",
+            "discription": "Яловичина, сир чеддер, помідор, цибуля, огірок, чатні з бекону, соус фірмовий, соус сирний",
+            "image": "twin-peaks.jpg",
+            "price": 87,
+            "category": "burgers",
+            "id": "0002"        
+        },
+        {
+            "name": "BLOOMY RIND",
+            "discription": "Яловичина, джем, салат айсберг, огірок, сир камамбер",
+            "image": "bloomy-rind.jpg",
+            "price": 82,
+            "category": "burgers",
+            "id": "0003"
+
+        },
+        {
+            "name": "HOT",
+            "discription": "Яловичина, чорізо, халапеньйо, огірок, цибуля, сир чеддер, соус фірмовий",
+            "image": "hot.jpg",
+            "price": 83,
+            "category": "burgers",
+            "id": "0004"        
+        },
+        {
+            "name": "SEASON BURGER",
+            "discription": "Яловичина",
+            "image": "placeholder.png",
+            "price": 81,
+            "category": "burgers",
+            "id": "0005"        
+        },
+        {
+            "name": "HEAVEN CHICKEN",
+            "discription": "М'ясо куряче, сир мармуровий, картопля фрі, перець болгарський, кукурудза, цибуля, пелатті",
+            "image": "heaven-chiken.jpg",
+            "price": 75,
+            "category": "quesadillas",
+            "id": "0006"        
+        },
+        {
+            "name": "EASY BEEF",
+            "discription": "Яловичина, сир мармуровий, картопля фрі, цибуля, соус фірмовий, соус сирний",
+            "image": "placeholder.png",
+            "price": 79,
+            "category": "quesadillas",
+            "id": "0007"        
+        },
+        {
+            "name": "SANDWICH SURF & TURF",
+            "discription": "Томлена свинина, крабовий діп, сир мармуровий, помідор, салат айсберг, майонез, пікантний соус",
+            "image": "placeholder.png",
+            "price": 67,
+            "category": "others",
+            "id": "0008"        
+        },
+        {
+            "name": "CHICKEN WINGS",
+            "discription": "Крильця курячі, соус",
+            "image": "placeholder.png",
+            "price": 75,
+            "category": "others",
+            "id": "0009"        
+        },
+        {
+            "name": "CRISPY SALAD",
+            "discription": "М'ясо куряче, салат, бекон, помідор, пармезан, соус фірмовий",
+            "image": "placeholder.png",
+            "price": 59,
+            "category": "others",
+            "id": "0010"        
+        },
+        {
+            "name": "FRENCH FRIES",
+            "discription": "Картопля фрі",
+            "image": "placeholder.png",
+            "price": 31,
+            "category": "others",
+            "id": "0011"        
+        },
+        {
+            "name": "ROYAL FRENCH FRIES",
+            "discription": "Картопля фрі, чатні з бекону, огірок, пікантний соус, соус сирний",
+            "image": "placeholder.png",
+            "price": 48,
+            "category": "others",
+            "id": "0012"        
+        },
+        {
+            "name": "ЕСПРЕССО",
+            "discription": "123",
+            "image": "placeholder.png",
+            "price": 12,
+            "category": "coffee",
+            "id": "0013"        
+        },
+        {
+            "name": "АМЕРИКАНО",
+            "discription": "123",
+            "image": "placeholder.png",
+            "price": 15,
+            "category": "coffee",
+            "id": "0014"        
+        },
+        {
+            "name": "АМЕРИКАНО З МОЛОКОМ",
+            "discription": "123",
+            "image": "placeholder.png",
+            "price": 17,
+            "category": "coffee",
+            "id": "0015"        
+        },
+        {
+            "name": "КАПУЧИНО",
+            "discription": "123",
+            "image": "placeholder.png",
+            "price": 21,
+            "category": "coffee",
+            "id": "0016"        
+        },
+        {
+            "name": "ЛАТТЕ",
+            "discription": "123",
+            "image": "placeholder.png",
+            "price": 23,
+            "category": "coffee",
+            "id": "0017"        
+        },
+        {
+            "name": "ЧАЙ",
+            "discription": "123",
+            "image": "placeholder.png",
+            "price": 14,
+            "category": "coffee",
+            "id": "0018"        
+        },
+        {
+            "name": "PULLED PORK",
+            "discription": "Томлена свинина, сир мармуровий, капуста, майонез, соус сацебелі",
+            "image": "placeholder.png",
+            "price": 79,
+            "category": "burittos",
+            "id": "0019"        
+        },
+        {
+            "name": "SWEET & SPICY",
+            "discription": "М'ясо куряче, сир мармуровий, капуста, помідор, майонез, пікантний соус",
+            "image": "placeholder.png",
+            "price": 77,
+            "category": "burittos",
+            "id": "0020"        
+        }
+        
+
+
+        ]    
+}

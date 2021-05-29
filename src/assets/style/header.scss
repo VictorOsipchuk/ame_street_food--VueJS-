@@ -1,0 +1,27 @@
+.header {
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    border-bottom: 1px solid #e4e4e4cc;
+}
+.header-logo {
+    height: 140px;
+    display: flex;
+    align-items: center;
+}
+.header-links {
+    display: flex;
+}
+.link-item {
+    background-color: #A8B7B7;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-right: 10px;
+    color: #fff;
+    &:hover {
+        background-color: rgb(87, 87, 87);
+        transition: background-color .2s linear;
+    }
+}

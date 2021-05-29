@@ -1,0 +1,107 @@
+.left_menu {
+    width: 100px;
+    background-color: $bgc-menu;
+    border-top-left-radius: 10px;
+    border-end-start-radius: 10px;
+    display: flex;
+
+}
+.left_menu-items {    
+    max-height: 920px;
+    display: flex;  
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 55px 0;
+}
+.burger-home-menu {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.menu_link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-content: center;
+    align-items: center;
+    padding: 10px;    
+}
+
+.link-href {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.icon-burger {
+    width: 35px;
+    height: 35px;
+}
+.buritto-icon {
+    height: 40px;
+}
+.quesadillas-icon {
+    width: 32px;
+    height: 32px;
+}
+.other-icon {
+    width: 35px;
+    height: 35px;
+}
+.drink-icon {
+    width: 35px; 
+    height: 35px;  
+}
+.phone-svg {
+    width: 30px;
+    height: 35px;
+}
+.social-svg {
+    width: 35px;
+}
+.menu-icon {
+    background-color: $bgc-menu-icon;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    
+    &:hover {
+        background-color: #fff;
+        transition: background-color .2s linear;
+
+        
+    }
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-content: center;
+    margin: 0 auto;
+}
+.phone {
+    margin: 0 auto;
+    background-color: $bgc-menu-icon;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    &:hover {
+        background-color: #fff;
+        transition: background-color .2s linear;
+    }
+}
+.phone-link {
+    display: flex;
+}

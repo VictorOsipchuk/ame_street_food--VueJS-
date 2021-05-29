@@ -1,0 +1,62 @@
+.order_history {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  margin-top: 30px;
+}
+.order_item {
+  width: 24%;
+  height: 100%;
+  border: 1px solid #fff;
+  margin: 10px 6px;
+  padding: 0 25px;
+  border-radius: 20px;
+  background-color: #dae4e4;
+}
+.order_num {
+  justify-content: center;
+  display: flex;
+  border-bottom: 0.5px solid #000;
+  padding: 15px 0;
+}
+.order_user {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  border-bottom: 0.5px solid #000;
+}
+.order_name {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 10px;
+}
+.order_info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.order_items {
+  display: flex;
+  flex-direction: column;
+}
+.order_product {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 0.5px solid #000;
+}
+.order_allsum {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #000;
+}
+.order_date {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+}
