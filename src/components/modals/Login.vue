@@ -37,7 +37,6 @@ export default {
     return {
       email: '',
       password: '',
-      asd: '',
     }
   },
   async mounted() {
