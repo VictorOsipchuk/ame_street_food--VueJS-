@@ -20,14 +20,13 @@ Vue.use(messagePlugin)
 Vue.component('Loader', Loader)
 
 firebase.initializeApp({
-  apiKey: 'AIzaSyBGWgg_o2Aw7U64laKbTueQFKRkmBKW8w0',
-  authDomain: 'ame-street-food.firebaseapp.com',
-  databaseURL:
-    'https://ame-street-food-default-rtdb.europe-west1.firebasedatabase.app',
-  projectId: 'ame-street-food',
-  storageBucket: 'ame-street-food.appspot.com',
-  messagingSenderId: '987015360865',
-  appId: '1:987015360865:web:cc9fab067b50f0401bd520',
+  apiKey: process.env.VUE_APP_apiKey,
+  authDomain: process.env.VUE_APP_authDomain,
+  databaseURL: process.env.VUE_APP_databaseURL,
+  projectId: process.env.VUE_APP_projectId,
+  storageBucket: process.env.VUE_APP_storageBucket,
+  messagingSenderId: process.env.VUE_APP_messagingSenderId,
+  appId: process.env.VUE_APP_appId,
 })
 
 let app
