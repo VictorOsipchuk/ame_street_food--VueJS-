@@ -30,6 +30,7 @@ export default {
     ...mapActions(['ADD_TO_CART']),
     CLICK_TO_CART(data) {
       this.ADD_TO_CART(data)
+      debugger
     },
   },
   mounted() {

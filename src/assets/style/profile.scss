@@ -4,3 +4,38 @@
 .profile-menu {
   width: 20%;
 }
+.svg-profile {
+  display: flex;
+  justify-content: center;
+}
+.svg-profile::after {
+  content: '';
+  background-color: rgb(105 105 105 / 31%);
+  margin-left: 5px;
+  padding: 1px;
+}
+.title-profile {
+  margin: 0 auto;
+  overflow: hidden; /* Обрезаем все, что не помещается в область */
+  padding: 5px; /* Поля вокруг текста */
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.profile {
+  background-color: $bgc-menu;
+  border-radius: 30px;
+  width: 130px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  padding: 0 15px;
+  &:hover {
+    background-color: rgb(184, 184, 184);
+    transition: background-color linear 0.2s;
+  }
+}
