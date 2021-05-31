@@ -28,7 +28,7 @@
             @deleteFromCart="deleteFromCart(index)"
           />
         </div>
-        <div class="cart-chekout" v-if="this.info.name">
+        <div class="cart-chekout" v-if="this.info">
           <form @submit.prevent="orderProduct">
             <div class="chekout">
               <p>
@@ -121,14 +121,14 @@ import { mapActions, mapGetters } from 'vuex'
 import CartItem from '../components/CartItem'
 export default {
   name: 'cart',
-  data: () => ({
-    name: '',
-    adress: '',
-    phone: '',
-    coment: '',
-    // self_pickup: false,
-    // delivery: true,
-  }),
+  data() {
+    return {
+      name: '',
+      adress: '',
+      phone: '',
+      coment: '',
+    }
+  },
   components: {
     CartItem,
   },
@@ -185,9 +185,11 @@ export default {
     setTimeout(() => {
       M.updateTextFields()
     }, 0)
-    this.name = this.info.name
-    this.adress = this.info.adress
-    this.phone = this.info.phone
+    if (this.info) {
+      this.name = this.info.name
+      this.adress = this.info.adress
+      this.phone = this.info.phone
+    }
   },
 }
 </script>

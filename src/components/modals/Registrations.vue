@@ -36,7 +36,12 @@
             </div>
             <div class="input-field col s6">
               <i class="material-icons prefix">phone</i>
-              <input id="icon_telephone" type="tel" class="validate" />
+              <input
+                id="icon_telephone"
+                type="tel"
+                class="validate"
+                v-model.number="phone"
+              />
               <label for="icon_telephone">Телефон</label>
             </div>
           </div>
@@ -69,6 +74,7 @@ export default {
     password: '',
     name: '',
     adress: '',
+    phone: '',
   }),
   mounted() {
     M.Modal.init(this.$refs.modal_reg)
@@ -85,6 +91,7 @@ export default {
         email: this.email,
         password: this.password,
         name: this.name,
+        phone: this.phone,
         adress: this.adress,
       }
       try {
