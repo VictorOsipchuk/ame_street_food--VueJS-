@@ -53,72 +53,12 @@
       </router-link>
     </div>
     <div class="header-links">
-      <a href="#" class="link-item">Доставка</a>
-      <a href="#" class="link-item">Контакти</a>
-      <a href="#" class="link-item">Про нас</a>
-      <a href="#" class="link-item">Медіа</a>
+      <a href="#" class="link-item">{{ 'DeliveryTitle' | localize }}</a>
+      <a href="#" class="link-item">{{ 'Contacts' | localize }}</a>
+      <a href="#" class="link-item">{{ 'AboutUs' | localize }}</a>
+      <a href="#" class="link-item">{{ 'Media' | localize }}</a>
     </div>
-
-    <div class="header-map">
-      <a href="#modal_map" class="modal-trigger">
-        <svg
-          version="1.1"
-          id="Layer_1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          x="0px"
-          y="0px"
-          viewBox="0 0 511.999 511.999"
-          style="enable-background:new 0 0 511.999 511.999;"
-          xml:space="preserve"
-        >
-          <path
-            style="fill:#D1D3D4;"
-            d="M180.648,511.479H60.366c-11.705,0-21.194-9.489-21.194-21.194V194.56
-                            c0-11.705,9.489-21.194,21.194-21.194h74.687c9.16,0,17.284,5.885,20.138,14.59c57.06,174.012,46.651-7.038,46.651,302.329
-                            C201.842,501.989,192.353,511.479,180.648,511.479z"
-          />
-          <path
-            style="fill:#48AEE2;"
-            d="M159.454,511.479V297.788c0-9.782,6.693-18.292,16.199-20.598
-                            c23.681-5.731,20.609,11.716,80.346,112.323c58.561-98.631,23.524-106.583,210.827,85.993c6.861,7.056,8.073,18.064,2.42,26.577
-                            C460.448,515.33,472.766,511.479,159.454,511.479z"
-          />
-          <path
-            style="fill:#39A3DB;"
-            d="M466.826,475.508c-186.77-192.029-151.829-185.357-210.827-85.995v121.965
-                            c210.927,0,204.672,3.515,213.246-9.395C474.899,493.573,473.687,482.563,466.826,475.508z"
-          />
-          <path
-            style="fill:#F59D00;"
-            d="M436.44,505.061C282.004,346.278,280.607,351.584,288.061,333.935
-                            c7.294-17.269,10.661-12.948,163.571-12.948c11.705,0,21.194,9.489,21.194,21.194v148.104
-                            C472.827,509.321,449.625,518.62,436.44,505.061z"
-          />
-          <path
-            style="fill:#57BDB7;"
-            d="M472.827,363.376c-179.701,0-171.824,2.283-180.227-6.194
-                            c-23.398-23.607,26.316-53.633,64.226-169.284c2.847-8.685,10.978-14.531,20.12-14.531h74.687c11.705,0,21.194,9.489,21.194,21.194
-                            L472.827,363.376L472.827,363.376z"
-          />
-          <path
-            style="fill:#FF5E5B;"
-            d="M255.999,0c-95.69,0-177.366,90.591-141.083,201.164c23.124,70.529,87.293,183.229,123.115,240.494
-                            c3.874,6.194,10.665,9.955,17.97,9.955c7.305,0,14.095-3.763,17.97-9.955c25.072-40.082,97.496-162.393,123.115-240.491v0.001
-                            C433.227,90.997,352.013,0,255.999,0z M255.998,226.722c-41.711,0-75.645-33.94-75.645-75.659c0-41.711,33.936-75.647,75.645-75.647
-                            c41.711,0,75.647,33.934,75.647,75.647C331.645,192.781,297.71,226.722,255.998,226.722z"
-          />
-          <path
-            style="fill:#FF423D;"
-            d="M255.999,0v75.416c41.711,0.001,75.645,33.936,75.645,75.647c0,41.718-33.934,75.658-75.645,75.659
-                            v224.891c7.305,0,14.094-3.763,17.968-9.955c25.072-40.082,97.496-162.393,123.115-240.491v0.001
-                            C433.227,90.997,352.013,0,255.999,0z"
-          />
-        </svg>
-        <p>Луцьк</p>
-      </a>
-    </div>
-    <div class="header-cart-profile">
+    <div class="header-cart">
       <router-link to="/cart">
         <div class="cart">
           <div class="cart-bill">{{ cartTotalCost }} ₴</div>
@@ -157,7 +97,9 @@
           </div>
         </div>
       </router-link>
+    </div>
 
+    <div class="header-cart-profile">
       <ul class="right hide-on-small-and-down">
         <li>
           <a
@@ -198,7 +140,7 @@
             </div>
             <div class="title-profile">
               <div v-if="info">{{ info.name }}</div>
-              <div v-else>Вхід</div>
+              <div v-else>{{ 'Login' | localize }}</div>
             </div>
           </a>
 
@@ -206,44 +148,120 @@
             <li v-if="!info">
               <a href="#modal_login" class="black-text modal-trigger">
                 <i class="material-icons">account_circle</i>
-                Увійти
+                {{ 'Login' | localize }}
               </a>
             </li>
             <li class="divider" tabindex="-1"></li>
             <li v-if="!info">
               <a href="#modal_reg" class="black-text modal-trigger">
-                <i class="material-icons">assignment_return</i>Реєстрація
+                <i class="material-icons">assignment_return</i
+                >{{ 'Registration' | localize }}
               </a>
             </li>
             <li class="divider" tabindex="-1"></li>
             <li v-if="info">
               <router-link to="/profile" class="black-text">
-                <i class="material-icons">assignment_return</i>Профіль
+                <i class="material-icons">assignment_return</i
+                >{{ 'ProfileTitle' | localize }}
               </router-link>
             </li>
             <li class="divider" tabindex="-1"></li>
             <li v-if="info">
               <router-link to="/orders" class="black-text">
-                <i class="material-icons">assignment_return</i>Замовлення
+                <i class="material-icons">assignment_return</i
+                >{{ 'Orders' | localize }}
               </router-link>
             </li>
             <li class="divider" tabindex="-1"></li>
             <li v-if="info">
               <a href="#" class="black-text" @click.prevent="logout">
-                <i class="material-icons">assignment_return</i>Вийти
+                <i class="material-icons">assignment_return</i
+                >{{ 'Logout' | localize }}
               </a>
             </li>
           </ul>
         </li>
       </ul>
+      <div class="header-settings">
+        <a
+          class="dropdown-trigger"
+          href="#"
+          data-target="settings_dropdown"
+          ref="settings_dropdown"
+        >
+          <svg
+            class="svg-settings"
+            width="30px"
+            heigth="30px"
+            fill="#ccc"
+            viewBox="0 0 128 128"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title />
+            <path
+              d="M64,39A25,25,0,1,0,89,64,25,25,0,0,0,64,39Zm0,44A19,19,0,1,1,83,64,19,19,0,0,1,64,83Z"
+            />
+            <path
+              d="M121,48h-8.93a1,1,0,0,1-.94-.68,49.9,49.9,0,0,0-2-4.85,1,1,0,0,1,.18-1.15L115.62,35a7,7,0,0,0,0-9.9L102.89,12.38a7,7,0,0,0-9.9,0l-6.31,6.31a1,1,0,0,1-1.15.18,49.76,49.76,0,0,0-4.85-2,1,1,0,0,1-.68-.94V7a7,7,0,0,0-7-7H55a7,7,0,0,0-7,7v8.93a1,1,0,0,1-.68.94,49.9,49.9,0,0,0-4.85,2,1,1,0,0,1-1.15-.18L35,12.38a7,7,0,0,0-9.9,0L12.38,25.11a7,7,0,0,0,0,9.9l6.31,6.31a1,1,0,0,1,.18,1.15,49.76,49.76,0,0,0-2,4.85,1,1,0,0,1-.94.68H7a7,7,0,0,0-7,7V73a7,7,0,0,0,7,7h8.93a1,1,0,0,1,.94.68,49.9,49.9,0,0,0,2,4.85,1,1,0,0,1-.18,1.15L12.38,93a7,7,0,0,0,0,9.9l12.73,12.73a7,7,0,0,0,9.9,0l6.31-6.31a1,1,0,0,1,1.15-.18,49.76,49.76,0,0,0,4.85,2,1,1,0,0,1,.68.94V121a7,7,0,0,0,7,7H73a7,7,0,0,0,7-7v-8.93a1,1,0,0,1,.68-.94,49.9,49.9,0,0,0,4.85-2,1,1,0,0,1,1.15.18L93,115.62a7,7,0,0,0,9.9,0l12.73-12.73a7,7,0,0,0,0-9.9l-6.31-6.31a1,1,0,0,1-.18-1.15,49.76,49.76,0,0,0,2-4.85,1,1,0,0,1,.94-.68H121a7,7,0,0,0,7-7V55A7,7,0,0,0,121,48Zm1,25a1,1,0,0,1-1,1h-8.93a7,7,0,0,0-6.6,4.69,43.9,43.9,0,0,1-1.76,4.26,7,7,0,0,0,1.35,8l6.31,6.31a1,1,0,0,1,0,1.41L98.65,111.38a1,1,0,0,1-1.41,0l-6.31-6.31a7,7,0,0,0-8-1.35,43.88,43.88,0,0,1-4.27,1.76,7,7,0,0,0-4.68,6.6V121a1,1,0,0,1-1,1H55a1,1,0,0,1-1-1v-8.93a7,7,0,0,0-4.69-6.6,43.9,43.9,0,0,1-4.26-1.76,7,7,0,0,0-8,1.35l-6.31,6.31a1,1,0,0,1-1.41,0L16.62,98.65a1,1,0,0,1,0-1.41l6.31-6.31a7,7,0,0,0,1.35-8,43.88,43.88,0,0,1-1.76-4.27A7,7,0,0,0,15.93,74H7a1,1,0,0,1-1-1V55a1,1,0,0,1,1-1h8.93a7,7,0,0,0,6.6-4.69,43.9,43.9,0,0,1,1.76-4.26,7,7,0,0,0-1.35-8l-6.31-6.31a1,1,0,0,1,0-1.41L29.35,16.62a1,1,0,0,1,1.41,0l6.31,6.31a7,7,0,0,0,8,1.35,43.88,43.88,0,0,1,4.27-1.76A7,7,0,0,0,54,15.93V7a1,1,0,0,1,1-1H73a1,1,0,0,1,1,1v8.93a7,7,0,0,0,4.69,6.6,43.9,43.9,0,0,1,4.26,1.76,7,7,0,0,0,8-1.35l6.31-6.31a1,1,0,0,1,1.41,0l12.73,12.73a1,1,0,0,1,0,1.41l-6.31,6.31a7,7,0,0,0-1.35,8,43.88,43.88,0,0,1,1.76,4.27,7,7,0,0,0,6.6,4.68H121a1,1,0,0,1,1,1Z"
+            />
+          </svg>
+        </a>
+        <ul id="settings_dropdown" class="dropdown-content dropdonw-settings">
+          <li
+            class="langitem
+          "
+          >
+            <div class="form_radio_btn">
+              <input
+                id="radio-1"
+                type="radio"
+                name="radio"
+                value="en"
+                v-model="checked"
+              />
+              <label for="radio-1">EN</label>
+            </div>
+
+            <div class="form_radio_btn">
+              <input
+                id="radio-2"
+                type="radio"
+                name="radio"
+                value="ua"
+                v-model="checked"
+              />
+              <label for="radio-2">УКР</label>
+            </div>
+
+            <div class="form_radio_btn">
+              <input
+                id="radio-3"
+                type="radio"
+                name="radio"
+                value="ru"
+                v-model="checked"
+              />
+              <label for="radio-3">РУС</label>
+            </div>
+          </li>
+          <li class="switch-theme">
+            <div class="switch">
+              <label>
+                Light
+                <input type="checkbox" />
+                <span class="lever"></span>
+                Dark
+              </label>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!-- Modal Structure -->
     <Registrations />
 
     <Login />
-
-    <Map />
   </header>
 </template>
 
@@ -252,8 +270,12 @@ import messages from '../utils/messages'
 import { mapGetters, mapActions } from 'vuex'
 import Registrations from './modals/Registrations'
 import Login from './modals/Login'
-import Map from './modals/Map'
 export default {
+  data() {
+    return {
+      checked: 'en',
+    }
+  },
   computed: {
     ...mapGetters(['CART', 'info']),
     cartTotalCost() {
@@ -292,13 +314,12 @@ export default {
       return this.$store.getters.error
     },
   },
-  async mounted() {
-    this.dropdown = M.Dropdown.init(this.$refs.dropdown, {
-      constrainWidth: true,
-    })
+  mounted() {
+    M.Dropdown.init(this.$refs.dropdown)
+    M.Dropdown.init(this.$refs.settings_dropdown, { closeOnClick: false })
   },
   methods: {
-    ...mapActions(['logout']),
+    ...mapActions(['logout', 'changeLang']),
     async logout() {
       await this.$store.dispatch('logout')
       // this.$messages('Ви вийшли з системи')
@@ -308,11 +329,13 @@ export default {
     error(fbError) {
       this.$error(messages[fbError.code] || 'щось пішло не так')
     },
+    checked() {
+      this.changeLang(this.checked)
+    },
   },
   components: {
     Registrations,
     Login,
-    Map,
     messages,
   },
 }

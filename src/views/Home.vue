@@ -6,32 +6,32 @@
       <router-link class="category-item" to="burgers">
         <img class="category-img" src="../assets/img/burger.jpg" alt="" />
         <p class="category-title">
-          Burgers
+          {{ 'CategoryBurgers' | localize }}
         </p>
       </router-link>
 
       <router-link class="category-item" to="/burittos">
         <img class="category-img" src="../assets/img/buritto.jpg" alt="" />
         <p class="category-title">
-          Burittos
+          {{ 'CategoryBurritos' | localize }}
         </p>
       </router-link>
       <router-link class="category-item" to="/quesadillas">
         <img class="category-img" src="../assets/img/quesadillas.jpeg" alt="" />
         <p class="category-title">
-          Quesadillas
+          {{ 'CategoryQuesadillas' | localize }}
         </p>
       </router-link>
       <router-link class="category-item" to="/others">
         <img class="category-img" src="../assets/img/others.jpeg" alt="" />
         <p class="category-title">
-          Others
+          {{ 'CategoryOthers' | localize }}
         </p>
       </router-link>
       <router-link class="category-item" to="/coffee">
         <img class="category-img" src="../assets/img/coffee.jpg" alt="" />
         <p class="category-title">
-          Coffee
+          {{ 'CategoryCoffee' | localize }}
         </p>
       </router-link>
     </div>
@@ -120,5 +120,5 @@
 <script>
 export default {
   name: 'Home',
-};
+}
 </script>

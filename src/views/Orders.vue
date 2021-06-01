@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="order_title">
-      <h3>Історія замовлень</h3>
+      <h3>{{ 'OrderHistory' | localize }}</h3>
     </div>
     <Loader v-if="loading" />
     <div class="order_history">

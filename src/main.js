@@ -4,6 +4,7 @@ import './registerServiceWorker'
 import router from './router'
 import store from './store'
 import messagePlugin from './utils/message.plugin'
+import localizeFilter from './filters/localize.filter'
 import Loader from './components/Loader'
 import 'materialize-css/dist/js/materialize.min'
 
@@ -17,6 +18,8 @@ Vue.config.productionTip = false
 Vue.config.devtools = true
 
 Vue.use(messagePlugin)
+
+Vue.filter('localize', localizeFilter)
 Vue.component('Loader', Loader)
 
 firebase.initializeApp({

@@ -1,7 +1,7 @@
 <template>
   <div id="modal_reg" class="modal" ref="modal_reg">
     <div class="modal-content">
-      <h4>Реєстрація</h4>
+      <h4>{{ 'Registration' | localize }}</h4>
       <div class="row">
         <form class="col s12" @submit.prevent="submitHandler">
           <div class="row">
@@ -12,7 +12,7 @@
                 class="validate"
                 v-model.trim="name"
               />
-              <label for="firstName">Ім'я</label>
+              <label for="firstName">{{ 'Name' | localize }}</label>
             </div>
             <div class="input-field col s6">
               <input
@@ -21,7 +21,7 @@
                 class="validate"
                 v-model.trim="adress"
               />
-              <label for="lastName">Адрес доставки</label>
+              <label for="lastName">{{ 'DeliveryAdress' | localize }}</label>
             </div>
           </div>
           <div class="row">
@@ -42,7 +42,7 @@
                 class="validate"
                 v-model.number="phone"
               />
-              <label for="icon_telephone">Телефон</label>
+              <label for="icon_telephone">{{ 'PhoneNumber' | localize }}</label>
             </div>
           </div>
           <div class="row">
@@ -53,11 +53,12 @@
                 class="validate"
                 v-model.trim="password"
               />
-              <label for="password">Пароль</label>
+              <label for="password">{{ 'Password' | localize }}</label>
             </div>
           </div>
           <button class="waves-effect waves-light btn-large" type="submit">
-            <i class="material-icons left">cloud</i>Регістрація
+            <i class="material-icons left">cloud</i
+            >{{ 'Registration' | localize }}
           </button>
         </form>
       </div>

@@ -1,7 +1,7 @@
 <template>
   <div id="modal_login" class="modal" ref="modal_login">
     <div class="modal-content">
-      <h4>Логін</h4>
+      <h4>{{ 'Login' | localize }}</h4>
       <div class="row">
         <form class="col s12" @submit.prevent="submitHandler">
           <div class="row">
@@ -17,12 +17,12 @@
                 type="password"
                 v-model.trim="password"
               />
-              <label for="password">Пароль</label>
+              <label for="password">{{ 'Password' | localize }}</label>
             </div>
           </div>
           <button class="waves-effect waves-light btn-large" type="submit">
             <i class="material-icons left">cloud</i>
-            Увійти
+            {{ 'Login' | localize }}
           </button>
         </form>
       </div>

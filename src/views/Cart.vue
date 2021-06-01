@@ -3,7 +3,7 @@
     <div class="cart-shop" v-if="this.CART.length">
       <div class="cart-header">
         <div class="cart-title">
-          <h4>Оформити замовлення</h4>
+          <h4>{{ 'Cart' | localize }}</h4>
         </div>
 
         <!-- <div class="clean-cart">
@@ -34,13 +34,13 @@
               <p>
                 <label>
                   <input name="group1" type="radio" checked />
-                  <span>Самовивіз</span>
+                  <span>{{ 'SelfPickUp' | localize }}</span>
                 </label>
               </p>
               <p>
                 <label>
                   <input name="group1" type="radio" />
-                  <span>Доставка</span>
+                  <span>{{ 'DeliveryTitle' | localize }}</span>
                 </label>
               </p>
             </div>
@@ -53,7 +53,7 @@
                   class="validate"
                   v-model.trim="name"
                 />
-                <label for="firstName">Ім'я</label>
+                <label for="firstName">{{ 'Name' | localize }}</label>
               </div>
               <div class="input-field col s12">
                 <input
@@ -62,19 +62,20 @@
                   class="validate"
                   v-model.trim="adress"
                 />
-                <label for="lastName">Адрес доставки</label>
+                <label for="lastName">{{ 'DeliveryAdress' | localize }}</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12">
-                <i class="material-icons prefix">phone</i>
                 <input
                   id="icon_telephone"
                   type="tel"
                   class="validate"
                   v-model="phone"
                 />
-                <label for="icon_telephone">Телефон</label>
+                <label for="icon_telephone">{{
+                  'PhoneNumber' | localize
+                }}</label>
               </div>
             </div>
             <div class="row">
@@ -84,34 +85,26 @@
                   class="materialize-textarea"
                   v-model="coment"
                 ></textarea>
-                <label for="textarea1">Коментар до замовлення</label>
+                <label for="textarea1">{{ 'CommentToOrder' | localize }}</label>
               </div>
             </div>
             <div class="cart-sum">
               <span>
-                Сумма замовлення: <b>{{ cartTotalCost }} ₴</b></span
+                {{ 'SumOrders' | localize }}: <b>{{ cartTotalCost }} ₴</b></span
               >
-            </div>
-            <div class="cart-btns">
-              <button
-                type="button"
-                onclick="history.back(); return false;"
-                class="cart-btn-back"
-              >
-                &#8592; Повернутися назад
-              </button>
+
               <button type="submit" class="cart-btn-submit">
-                Оформити замовлення
+                {{ 'SubmitOrder' | localize }}
               </button>
             </div>
           </form>
         </div>
-        <div v-else class="center">Увійдіть в аккаунт</div>
+        <div v-else class="center">{{ 'LoginError' | localize }}</div>
       </div>
     </div>
 
     <span v-else class="center">
-      Кошик пустий
+      {{ 'EmptyCart' | localize }}
     </span>
   </div>
 </template>

@@ -9,6 +9,7 @@
 @import './items';
 @import './profile.scss';
 @import './orders.scss';
+@import './castombtn.scss';
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
@@ -56,4 +57,11 @@ a {
   width: 190px !important;
   height: auto !important;
   top: 154px !important;
+}
+
+.dropdonw-settings {
+  width: 200px !important;
+  height: auto !important;
+  top: 154px !important;
+  right: calc(100vw - 22%);
 }

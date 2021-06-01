@@ -1,6 +1,8 @@
 <template>
-  <div class="category_title">
-    <h1 class="center">Coffee</h1>
+  <div>
+    <div class="category_title">
+      <h1 class="center">{{ 'CategoryCoffee' | localize }}</h1>
+    </div>
 
     <Loader v-if="loading" />
 
@@ -21,10 +23,11 @@ import { mapActions, mapGetters } from 'vuex'
 
 export default {
   name: 'coffee',
-  data: () => ({
-    loading: true,
-  }),
-
+  data() {
+    return {
+      loading: true,
+    }
+  },
   methods: {
     ...mapActions(['ADD_TO_CART']),
     CLICK_TO_CART(data) {

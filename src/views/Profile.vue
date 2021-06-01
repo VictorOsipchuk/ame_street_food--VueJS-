@@ -2,7 +2,7 @@
   <div>
     <div class="profile-title pb-10px">
       <h4>
-        Профіль користувача <b>{{ info.name }}</b>
+        {{ 'ProfileTitle' | localize }} <b>{{ info.name }}</b>
       </h4>
     </div>
     <div class="row">
@@ -10,7 +10,7 @@
         <div class="row">
           <div class="input-field col s4">
             <input id="name" type="text" class="validate" v-model.trim="name" />
-            <label for="name">Ім'я</label>
+            <label for="name">{{ 'Name' | localize }}</label>
           </div>
         </div>
         <div class="row">
@@ -21,7 +21,7 @@
               class="validate"
               v-model.trim="adress"
             />
-            <label for="adress">Адрес доставки</label>
+            <label for="adress">{{ 'DeliveryAdress' | localize }}</label>
           </div>
         </div>
         <div class="row">
@@ -32,11 +32,11 @@
               class="validate"
               v-model.trim="phone"
             />
-            <label for="phone">Телефон</label>
+            <label for="phone">{{ 'PhoneNumber' | localize }}</label>
           </div>
         </div>
         <button class="waves-effect waves-light btn-large" type="submit">
-          <i class="material-icons left">save</i>Зберегти
+          <i class="material-icons left">save</i>{{ 'UpdateInfo' | localize }}
         </button>
       </form>
     </div>

@@ -7,6 +7,7 @@ import chekout from './chekout'
 import items from './products'
 import cart from './cart'
 import errors from './errors'
+import localize from './localize'
 
 Vue.use(Vuex)
 
@@ -18,5 +19,6 @@ export default new Vuex.Store({
     chekout,
     cart,
     errors,
+    localize,
   },
 })

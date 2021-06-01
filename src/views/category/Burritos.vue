@@ -1,6 +1,8 @@
 <template>
-  <div class="category_title">
-    <h1 class="center">Burritos</h1>
+  <div>
+    <div class="category_title">
+      <h1 class="center">{{ 'CategoryBurritos' | localize }}</h1>
+    </div>
 
     <Loader v-if="loading" />
 

@@ -1,7 +1,7 @@
 .header-cart-profile {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: baseline;
 }
 
 .cart {
@@ -151,8 +151,8 @@
 }
 .cart-sum {
   display: flex;
-  justify-content: flex-end;
-  width: 100%;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 40px;
   text-align: center;
   & span {

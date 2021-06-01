@@ -1,6 +1,6 @@
 <template>
   <div class="order_item">
-    <div class="order_num">Замовлення №{{ order_data.id }}</div>
+    <div class="order_num">{{ 'Orders' | localize }} №{{ order_data.id }}</div>
     <div class="order_user">
       <div class="order_name">{{ order_data.order_info.name }}</div>
       <div class="order_info">
@@ -22,10 +22,11 @@
         <div class="order_product_sum">{{ prod.price * prod.quantity }} ₴</div>
       </div>
     </div>
-    <div class="order_allsum">Сумма замовлення: {{ cartTotalCost }} ₴</div>
+    <div class="order_allsum">
+      {{ 'SumOrders' | localize }}: {{ cartTotalCost }} ₴
+    </div>
     <div class="order_date">
       <div class="order_date_h">{{ order_data.order_info.Date }}</div>
-      <!-- <div class="order_date_d">24.25.2021</div> -->
     </div>
   </div>
 </template>

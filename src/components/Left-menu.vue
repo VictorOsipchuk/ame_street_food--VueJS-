@@ -120,7 +120,7 @@
                 </g>
               </svg>
             </div>
-            Burgers</router-link
+            {{ 'CategoryBurgers' | localize }}</router-link
           >
         </div>
         <div class="menu_link">
@@ -184,7 +184,7 @@
                 </g>
               </svg>
             </div>
-            Burritos</router-link
+            {{ 'CategoryBurritos' | localize }}</router-link
           >
         </div>
         <div class="menu_link">
@@ -251,7 +251,7 @@
                 />
               </svg>
             </div>
-            Quesadillas</router-link
+            {{ 'CategoryQuesadillas' | localize }}</router-link
           >
         </div>
         <div class="menu_link">
@@ -366,8 +366,8 @@
                 </g>
               </svg>
             </div>
-            Others</router-link
-          >
+            {{ 'CategoryOthers' | localize }}
+          </router-link>
         </div>
         <div class="menu_link">
           <router-link to="/coffee" class="link-href">
@@ -481,8 +481,8 @@
                 </g>
               </svg>
             </div>
-            Coffee</router-link
-          >
+            {{ 'CategoryCoffee' | localize }}
+          </router-link>
         </div>
       </div>
 
@@ -577,5 +577,5 @@
   </div>
 </template>
 <script>
-export default {};
+export default {}
 </script>
