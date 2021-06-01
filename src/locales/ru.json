@@ -23,5 +23,7 @@
   "LoginError": "Пожалуйста войдите в свой аккаунт",
   "SelfPickUp": "Самовивоз",
   "CommentToOrder": "Комментарий к заказу",
-  "SubmitOrder": "Оформить заказ"
+  "SubmitOrder": "Оформить заказ",
+  "OrderHistory": "История заказов",
+  "UpdateInfo": "Обновить"
 }

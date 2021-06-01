@@ -23,5 +23,7 @@
   "LoginError": "Будь ласка увійдіть до акаунту",
   "SelfPickUp": "Самовивіз",
   "CommentToOrder": "Коментар до замовлення",
-  "SubmitOrder": "Оформити замовлення"
+  "SubmitOrder": "Оформити замовлення",
+  "OrderHistory": "Історія замовлень",
+  "UpdateInfo": "Обновити"
 }
