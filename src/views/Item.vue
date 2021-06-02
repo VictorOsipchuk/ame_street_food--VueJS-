@@ -13,7 +13,6 @@
       <div class="product-cart">
         <div class="product-price">{{ product_data.price }} ₴</div>
         <button class="btn-add" @click.prevent="addToCart">
-          <span>+</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"

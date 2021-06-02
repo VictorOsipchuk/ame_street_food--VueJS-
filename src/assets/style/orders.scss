@@ -15,6 +15,16 @@
   padding: 0 25px;
   border-radius: 20px;
   background-color: #dae4e4;
+  @media #{$laptop} {
+    width: 31%;
+    margin-left: 0;
+  }
+  @media #{$tablet-h} {
+    width: 48%;
+  }
+  @media #{$mobile} {
+    width: 100%;
+  }
 }
 .order_num {
   justify-content: center;
@@ -59,4 +69,10 @@
   display: flex;
   justify-content: space-around;
   padding: 15px 0;
+}
+.order_title h4 {
+  @media #{$mobile} {
+    font-size: 1.3rem;
+    text-align: center;
+  }
 }

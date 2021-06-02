@@ -5,14 +5,29 @@
   align-content: center;
   align-items: center;
   border-bottom: 1px solid #e4e4e4cc;
+  @media #{$laptop} {
+    height: 120px;
+  }
+  @media #{$mobile-b} {
+    flex-flow: wrap-reverse;
+    justify-content: space-evenly;
+  }
 }
 .header-logo {
-  height: 140px;
   display: flex;
   align-items: center;
+  @media #{$mobile-b} {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
 }
 .header-links {
   display: flex;
+  @media #{$tablet} {
+    display: none;
+  }
 }
 .link-item {
   background-color: #a8b7b7;
@@ -24,18 +39,50 @@
     background-color: rgb(87, 87, 87);
     transition: background-color 0.2s linear;
   }
+  @media #{$laptop} {
+    font-size: 14px;
+    padding: 7px 10px;
+  }
 }
 .header-settings {
-  margin-left: 15px;
   display: flex;
   align-items: center;
+  fill: rgb(149, 149, 149);
+  width: 40px;
+  height: 40px;
+  @media #{$mobile} {
+    width: 30px;
+    height: 30px;
+  }
 }
 .svg-settings:hover {
   fill: rgb(90, 90, 90);
   transition: fill 0.2s linear;
+  display: flex;
+  align-items: center;
 }
 .switch-theme {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.svg-header-logo {
+  width: 204px;
+  height: 94px;
+  @media #{$laptop} {
+    width: 150px;
+    height: 70px;
+  }
+  @media #{$tablet-h} {
+    width: 110px;
+    height: 50px;
+  }
+}
+.svg-profile {
+  width: 30px;
+  height: 30px;
+  @media #{$tablet-h} {
+    width: 20px;
+    height: 20px;
+  }
 }

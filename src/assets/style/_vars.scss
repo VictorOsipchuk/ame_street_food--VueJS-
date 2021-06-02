@@ -1,4 +1,10 @@
-$bgc-main: #CDE1E1;
-$bgc-menu: #D5F4F4;
-$bgc-menu-icon: #98B8B8;
-$bgc-btn-primary: #2DC7C9;
+$bgc-main: #cde1e1;
+$bgc-menu: #d5f4f4;
+$bgc-menu-icon: #98b8b8;
+$bgc-btn-primary: #2dc7c9;
+$laptop: '(max-width: 1024px)';
+$tablet: '(max-width: 768px)';
+$tablet-h: '(max-width: 640px)';
+$mobile-b: '(max-width: 540px)';
+$mobile: '(max-width: 380px)';
+$mobile-s: '(max-width: 320px)';

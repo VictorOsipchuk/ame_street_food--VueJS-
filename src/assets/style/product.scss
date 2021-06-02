@@ -1,16 +1,26 @@
 .product-item {
   width: 25%;
   padding: 10px 10px;
+  @media #{$laptop} {
+    width: 33%;
+  }
+  @media #{$tablet} {
+    width: 50%;
+  }
+  @media #{$mobile} {
+    width: 100%;
+  }
 }
 .product-info {
   text-align: center;
+  padding: 0 15px;
   & p {
     font-size: 12px;
   }
 }
 .product-block {
   background-color: #f3f3f3;
-  padding: 15px;
+  padding: 15px 0 0 0;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -29,8 +39,8 @@
 }
 .product-cart {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  padding-top: 15px;
 }
 
 .form_radio_btn {
@@ -77,15 +87,20 @@
   display: flex;
   align-items: center;
   align-content: center;
+  padding: 15px 0;
 
   text-align: center;
   margin: 0 auto;
+  @media #{$tablet-h} {
+    font-size: 18px;
+  }
 }
 .btn-add {
-  background-color: #bbf1f1;
-  border-radius: 20px;
+  background-color: #cde1e1;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   border: 0px solid #eb5a1e;
-  padding: 5px 35px;
+  padding: 10px 0;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -93,15 +108,19 @@
   &:focus {
     outline: none;
   }
-  & svg {
-    padding-left: 7px;
-  }
-  & span {
-    font-size: 20px;
-  }
+
   &:hover {
     background-color: #7ad8da;
     transition: background-color 0.2s linear;
+  }
+  svg {
+    @media #{$mobile-b} {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  @media #{$tablet-h} {
+    padding: 5px 0;
   }
 }
 
@@ -124,7 +143,10 @@
   &:hover {
     transform: scale(1.1);
   }
-}
-.category_title {
-  padding: 25px 0;
+  @media #{$tablet-h} {
+    height: 180px;
+  }
+  @media #{$mobile-b} {
+    height: 150px;
+  }
 }

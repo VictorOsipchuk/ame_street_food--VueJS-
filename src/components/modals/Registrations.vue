@@ -35,7 +35,6 @@
               <label for="email">Email</label>
             </div>
             <div class="input-field col s6">
-              <i class="material-icons prefix">phone</i>
               <input
                 id="icon_telephone"
                 type="tel"

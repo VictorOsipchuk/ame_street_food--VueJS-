@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="profile-title pb-10px">
+    <div class="profile-title">
       <h4>
         {{ 'ProfileTitle' | localize }} <b>{{ info.name }}</b>
       </h4>

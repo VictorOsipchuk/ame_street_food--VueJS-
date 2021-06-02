@@ -3,8 +3,7 @@
     <div class="header-logo">
       <router-link to="/">
         <svg
-          width="204"
-          height="94"
+          class="svg-header-logo"
           viewBox="0 0 204 94"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +99,7 @@
     </div>
 
     <div class="header-cart-profile">
-      <ul class="right hide-on-small-and-down">
+      <ul class="right">
         <li>
           <a
             class="dropdown-trigger profile black-text"
@@ -109,10 +108,9 @@
             data-target="dropdown"
             ref="dropdown"
           >
-            <div class="svg-profile">
+            <div>
               <svg
-                width="30px"
-                height="30px"
+                class="svg-profile"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -182,80 +180,6 @@
           </ul>
         </li>
       </ul>
-      <div class="header-settings">
-        <a
-          class="dropdown-trigger"
-          href="#"
-          data-target="settings_dropdown"
-          ref="settings_dropdown"
-        >
-          <svg
-            class="svg-settings"
-            width="30px"
-            heigth="30px"
-            fill="#ccc"
-            viewBox="0 0 128 128"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title />
-            <path
-              d="M64,39A25,25,0,1,0,89,64,25,25,0,0,0,64,39Zm0,44A19,19,0,1,1,83,64,19,19,0,0,1,64,83Z"
-            />
-            <path
-              d="M121,48h-8.93a1,1,0,0,1-.94-.68,49.9,49.9,0,0,0-2-4.85,1,1,0,0,1,.18-1.15L115.62,35a7,7,0,0,0,0-9.9L102.89,12.38a7,7,0,0,0-9.9,0l-6.31,6.31a1,1,0,0,1-1.15.18,49.76,49.76,0,0,0-4.85-2,1,1,0,0,1-.68-.94V7a7,7,0,0,0-7-7H55a7,7,0,0,0-7,7v8.93a1,1,0,0,1-.68.94,49.9,49.9,0,0,0-4.85,2,1,1,0,0,1-1.15-.18L35,12.38a7,7,0,0,0-9.9,0L12.38,25.11a7,7,0,0,0,0,9.9l6.31,6.31a1,1,0,0,1,.18,1.15,49.76,49.76,0,0,0-2,4.85,1,1,0,0,1-.94.68H7a7,7,0,0,0-7,7V73a7,7,0,0,0,7,7h8.93a1,1,0,0,1,.94.68,49.9,49.9,0,0,0,2,4.85,1,1,0,0,1-.18,1.15L12.38,93a7,7,0,0,0,0,9.9l12.73,12.73a7,7,0,0,0,9.9,0l6.31-6.31a1,1,0,0,1,1.15-.18,49.76,49.76,0,0,0,4.85,2,1,1,0,0,1,.68.94V121a7,7,0,0,0,7,7H73a7,7,0,0,0,7-7v-8.93a1,1,0,0,1,.68-.94,49.9,49.9,0,0,0,4.85-2,1,1,0,0,1,1.15.18L93,115.62a7,7,0,0,0,9.9,0l12.73-12.73a7,7,0,0,0,0-9.9l-6.31-6.31a1,1,0,0,1-.18-1.15,49.76,49.76,0,0,0,2-4.85,1,1,0,0,1,.94-.68H121a7,7,0,0,0,7-7V55A7,7,0,0,0,121,48Zm1,25a1,1,0,0,1-1,1h-8.93a7,7,0,0,0-6.6,4.69,43.9,43.9,0,0,1-1.76,4.26,7,7,0,0,0,1.35,8l6.31,6.31a1,1,0,0,1,0,1.41L98.65,111.38a1,1,0,0,1-1.41,0l-6.31-6.31a7,7,0,0,0-8-1.35,43.88,43.88,0,0,1-4.27,1.76,7,7,0,0,0-4.68,6.6V121a1,1,0,0,1-1,1H55a1,1,0,0,1-1-1v-8.93a7,7,0,0,0-4.69-6.6,43.9,43.9,0,0,1-4.26-1.76,7,7,0,0,0-8,1.35l-6.31,6.31a1,1,0,0,1-1.41,0L16.62,98.65a1,1,0,0,1,0-1.41l6.31-6.31a7,7,0,0,0,1.35-8,43.88,43.88,0,0,1-1.76-4.27A7,7,0,0,0,15.93,74H7a1,1,0,0,1-1-1V55a1,1,0,0,1,1-1h8.93a7,7,0,0,0,6.6-4.69,43.9,43.9,0,0,1,1.76-4.26,7,7,0,0,0-1.35-8l-6.31-6.31a1,1,0,0,1,0-1.41L29.35,16.62a1,1,0,0,1,1.41,0l6.31,6.31a7,7,0,0,0,8,1.35,43.88,43.88,0,0,1,4.27-1.76A7,7,0,0,0,54,15.93V7a1,1,0,0,1,1-1H73a1,1,0,0,1,1,1v8.93a7,7,0,0,0,4.69,6.6,43.9,43.9,0,0,1,4.26,1.76,7,7,0,0,0,8-1.35l6.31-6.31a1,1,0,0,1,1.41,0l12.73,12.73a1,1,0,0,1,0,1.41l-6.31,6.31a7,7,0,0,0-1.35,8,43.88,43.88,0,0,1,1.76,4.27,7,7,0,0,0,6.6,4.68H121a1,1,0,0,1,1,1Z"
-            />
-          </svg>
-        </a>
-        <ul id="settings_dropdown" class="dropdown-content dropdonw-settings">
-          <li
-            class="langitem
-          "
-          >
-            <div class="form_radio_btn">
-              <input
-                id="radio-1"
-                type="radio"
-                name="radio"
-                value="en"
-                v-model="checked"
-              />
-              <label for="radio-1">EN</label>
-            </div>
-
-            <div class="form_radio_btn">
-              <input
-                id="radio-2"
-                type="radio"
-                name="radio"
-                value="ua"
-                v-model="checked"
-              />
-              <label for="radio-2">УКР</label>
-            </div>
-
-            <div class="form_radio_btn">
-              <input
-                id="radio-3"
-                type="radio"
-                name="radio"
-                value="ru"
-                v-model="checked"
-              />
-              <label for="radio-3">РУС</label>
-            </div>
-          </li>
-          <li class="switch-theme">
-            <div class="switch">
-              <label>
-                Light
-                <input type="checkbox" />
-                <span class="lever"></span>
-                Dark
-              </label>
-            </div>
-          </li>
-        </ul>
-      </div>
     </div>
 
     <!-- Modal Structure -->
@@ -271,11 +195,6 @@ import { mapGetters, mapActions } from 'vuex'
 import Registrations from './modals/Registrations'
 import Login from './modals/Login'
 export default {
-  data() {
-    return {
-      checked: 'en',
-    }
-  },
   computed: {
     ...mapGetters(['CART', 'info']),
     cartTotalCost() {
@@ -316,10 +235,9 @@ export default {
   },
   mounted() {
     M.Dropdown.init(this.$refs.dropdown)
-    M.Dropdown.init(this.$refs.settings_dropdown, { closeOnClick: false })
   },
   methods: {
-    ...mapActions(['logout', 'changeLang']),
+    ...mapActions(['logout']),
     async logout() {
       await this.$store.dispatch('logout')
       // this.$messages('Ви вийшли з системи')
@@ -328,9 +246,6 @@ export default {
   watch: {
     error(fbError) {
       this.$error(messages[fbError.code] || 'щось пішло не так')
-    },
-    checked() {
-      this.changeLang(this.checked)
     },
   },
   components: {

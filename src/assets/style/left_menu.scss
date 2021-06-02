@@ -1,107 +1,162 @@
 .left_menu {
-    width: 100px;
-    background-color: $bgc-menu;
-    border-top-left-radius: 10px;
-    border-end-start-radius: 10px;
-    display: flex;
-
+  width: 115px;
+  background-color: $bgc-menu;
+  border-top-left-radius: 10px;
+  border-end-start-radius: 10px;
+  display: flex;
+  @media #{$laptop} {
+    width: 80px;
+  }
+  @media #{$mobile-b} {
+    width: 70px;
+  }
+  @media #{$mobile} {
+    width: 50px;
+  }
 }
-.left_menu-items {    
-    max-height: 920px;
-    display: flex;  
-    justify-content: space-between;
-    flex-direction: column;
-    padding: 55px 0;
+.left_menu-items {
+  max-height: 920px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 38px 0;
+  @media #{$mobile-b} {
+    max-height: 800px;
+  }
+  @media #{$mobile} {
+    max-height: 650px;
+  }
 }
 .burger-home-menu {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 .menu_link {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0 auto;
-    align-content: center;
-    align-items: center;
-    padding: 10px;    
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-content: center;
+  align-items: center;
+  padding: 10px;
+  @media #{$laptop} {
+    font-size: 13px;
+  }
 }
 
 .link-href {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  span {
+    @media #{$mobile-b} {
+      display: none;
+    }
+  }
 }
 
 .icon-burger {
-    width: 35px;
-    height: 35px;
+  width: 40px;
+  height: 40px;
+  @media #{$mobile} {
+    width: 25px;
+    height: 25px;
+  }
 }
 .buritto-icon {
-    height: 40px;
+  height: 40px;
+  @media #{$mobile} {
+    height: 30px;
+  }
 }
 .quesadillas-icon {
-    width: 32px;
-    height: 32px;
+  width: 32px;
+  height: 32px;
+  @media #{$mobile} {
+    width: 25px;
+    height: 25px;
+  }
 }
 .other-icon {
-    width: 35px;
-    height: 35px;
+  width: 35px;
+  height: 35px;
+  @media #{$mobile} {
+    width: 30px;
+    height: 30px;
+  }
 }
 .drink-icon {
-    width: 35px; 
-    height: 35px;  
+  width: 35px;
+  height: 35px;
+  @media #{$mobile} {
+    width: 25px;
+    height: 25px;
+  }
 }
 .phone-svg {
-    width: 30px;
-    height: 35px;
+  width: 30px;
+  height: 35px;
+  @media #{$mobile} {
+    width: 20px;
+    height: 20px;
+  }
 }
 .social-svg {
-    width: 35px;
+  width: 35px;
+  @media #{$mobile} {
+    width: 25px;
+  }
 }
 .menu-icon {
-    background-color: $bgc-menu-icon;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    align-items: center;
-    
-    &:hover {
-        background-color: #fff;
-        transition: background-color .2s linear;
+  background-color: $bgc-menu-icon;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
 
-        
-    }
+  &:hover {
+    background-color: #fff;
+    transition: background-color 0.2s linear;
+  }
+  @media #{$mobile} {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .social {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
-    align-content: center;
-    margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  align-content: center;
+  margin: 0 auto;
 }
 .phone {
-    margin: 0 auto;
-    background-color: $bgc-menu-icon;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    align-items: center;
-    &:hover {
-        background-color: #fff;
-        transition: background-color .2s linear;
-    }
+  margin: 0 auto;
+  background-color: $bgc-menu-icon;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+  &:hover {
+    background-color: #fff;
+    transition: background-color 0.2s linear;
+  }
+  @media #{$mobile} {
+    width: 40px;
+    height: 40px;
+  }
 }
 .phone-link {
-    display: flex;
+  display: flex;
 }

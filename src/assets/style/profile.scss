@@ -1,5 +1,11 @@
 .profile-title {
   display: flex;
+  padding-bottom: 25px;
+  h4 {
+    @media #{$mobile} {
+      font-size: 1.3rem;
+    }
+  }
 }
 .profile-menu {
   width: 20%;
@@ -17,10 +23,13 @@
 .title-profile {
   margin: 0 auto;
   overflow: hidden; /* Обрезаем все, что не помещается в область */
-  padding: 5px; /* Поля вокруг текста */
+  padding-left: 7px; /* Поля вокруг текста */
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
+  @media #{$mobile-s} {
+    display: none;
+  }
 }
 .profile {
   background-color: $bgc-menu;
@@ -37,5 +46,18 @@
   &:hover {
     background-color: rgb(184, 184, 184);
     transition: background-color linear 0.2s;
+  }
+  @media #{$laptop} {
+    width: 126px;
+    height: 45px;
+  }
+  @media #{$tablet-h} {
+    width: 107px;
+    height: 41px;
+  }
+  @media #{$mobile-s} {
+    width: 41px;
+    justify-content: center;
+    padding: 0;
   }
 }

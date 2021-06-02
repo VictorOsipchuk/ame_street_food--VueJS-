@@ -1,5 +1,6 @@
 .main {
   min-height: calc(100vh - 70px);
+  padding: 25px 0;
 }
 
 .slider {
@@ -28,6 +29,9 @@
 
   &:last-child {
     margin-right: 0px;
+  }
+  @media #{$tablet} {
+    width: 100%;
   }
 }
 .category-img {
