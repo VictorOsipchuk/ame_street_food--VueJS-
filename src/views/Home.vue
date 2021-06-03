@@ -120,5 +120,17 @@
 <script>
 export default {
   name: 'Home',
+  metaInfo() {
+    return {
+      title: this.$title('Main'),
+      meta: [
+        {
+          name: 'description',
+          property: 'description',
+          content: 'street food, delivery, food, burgers',
+        },
+      ],
+    }
+  },
 }
 </script>

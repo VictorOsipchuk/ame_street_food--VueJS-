@@ -42,11 +42,6 @@ const routes = [
     component: () => import('../views/category/Coffee.vue'),
   },
   {
-    path: '/items',
-    name: 'items',
-    component: () => import('../views/Item.vue'),
-  },
-  {
     path: '/profile',
     name: 'profile',
     component: () => import('../views/Profile.vue'),

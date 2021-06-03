@@ -114,6 +114,18 @@ import { mapActions, mapGetters } from 'vuex'
 import CartItem from '../components/CartItem'
 export default {
   name: 'cart',
+  metaInfo() {
+    return {
+      title: this.$title('Cart'),
+      meta: [
+        {
+          name: 'description',
+          property: 'description',
+          content: 'cart',
+        },
+      ],
+    }
+  },
   data() {
     return {
       name: '',

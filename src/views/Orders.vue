@@ -14,6 +14,18 @@ import OrderCart from '../components/OrderCart'
 import Loader from '../components/Loader'
 import { mapActions, mapGetters } from 'vuex'
 export default {
+  metaInfo() {
+    return {
+      title: this.$title('Orders'),
+      meta: [
+        {
+          name: 'description',
+          property: 'description',
+          content: 'orders',
+        },
+      ],
+    }
+  },
   data() {
     return {
       loading: true,

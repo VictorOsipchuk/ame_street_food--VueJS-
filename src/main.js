@@ -3,6 +3,8 @@ import App from './App.vue'
 import './registerServiceWorker'
 import router from './router'
 import store from './store'
+import VueMeta from 'vue-meta'
+import titlePlugin from './utils/title.plugin'
 import messagePlugin from './utils/message.plugin'
 import localizeFilter from './filters/localize.filter'
 import Loader from './components/Loader'
@@ -18,6 +20,8 @@ Vue.config.productionTip = false
 Vue.config.devtools = true
 
 Vue.use(messagePlugin)
+Vue.use(titlePlugin)
+Vue.use(VueMeta)
 
 Vue.filter('localize', localizeFilter)
 Vue.component('Loader', Loader)

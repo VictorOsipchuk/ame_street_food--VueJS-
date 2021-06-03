@@ -18,11 +18,19 @@
 </template>
 
 <script>
-import Item from '../Item'
+import Item from '@/components/Item'
 import { mapActions, mapGetters } from 'vuex'
 
 export default {
   name: 'coffee',
+  metaInfo() {
+    return {
+      title: this.$title('CategoryCoffee'),
+      meta: [
+        { name: 'description', property: 'description', content: 'coffee' },
+      ],
+    }
+  },
   data() {
     return {
       loading: true,

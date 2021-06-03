@@ -46,6 +46,18 @@
 import { mapGetters, mapActions } from 'vuex'
 export default {
   name: 'profile',
+  metaInfo() {
+    return {
+      title: this.$title('ProfileTitle'),
+      meta: [
+        {
+          name: 'description',
+          property: 'description',
+          content: 'profile',
+        },
+      ],
+    }
+  },
   data() {
     return {
       name: '',
