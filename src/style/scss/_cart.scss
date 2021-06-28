@@ -26,7 +26,7 @@
   }
 }
 .cart-bill:after {
-  content: '';
+  content: "";
   background-color: rgba(255, 255, 255, 0.25);
   margin: 10px;
   padding: 1px;
@@ -316,7 +316,7 @@
     -webkit-line-clamp: 2;
     line-clamp: 2;
     display: -webkit-box;
-    display: box;
+    display: flex;
     word-wrap: break-word;
     -webkit-box-orient: vertical;
     box-orient: vertical;

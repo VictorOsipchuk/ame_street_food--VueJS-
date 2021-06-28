@@ -1,17 +1,17 @@
-@import '_vars';
-@import '_normalize';
-@import './left_menu';
-@import './header';
-@import './cart';
-@import './main';
-@import './footer';
-@import './product';
-@import './items';
-@import './profile.scss';
-@import './orders.scss';
-@import './castombtn.scss';
+@import "_vars";
+@import "_normalize";
+@import "_left_menu";
+@import "_header";
+@import "_cart";
+@import "_main";
+@import "_footer";
+@import "_product";
+@import "_items";
+@import "_profile";
+@import "_orders";
+@import "_castombtn";
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
 h1 {
   padding: 0 0 25px 0;
@@ -34,12 +34,12 @@ body {
   justify-content: center;
   align-items: center;
   align-content: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: normal;
 }
 
 .content {
-  width: 1400px;
+  max-width: 1400px;
   min-height: 950px;
 
   background-color: rgb(255, 255, 255);

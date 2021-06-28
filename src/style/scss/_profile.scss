@@ -15,8 +15,8 @@
   justify-content: center;
 }
 .svg-profile::after {
-  content: '';
-  background-color: rgb(105 105 105 / 31%);
+  content: "";
+  // background-color: rgba(105 105 105 / 31%);
   margin-left: 5px;
   padding: 1px;
 }

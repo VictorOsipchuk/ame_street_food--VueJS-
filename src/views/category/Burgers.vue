@@ -3,7 +3,7 @@
     <div class="category_title">
       <h1 class="center">{{ 'CategoryBurgers' | localize }}</h1>
     </div>
-    <Loader v-if="loading" />
+    <Loader v-if="(loading = false)" />
 
     <div class="product-items" v-else>
       <Item

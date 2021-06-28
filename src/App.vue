@@ -18,31 +18,31 @@
 </template>
 
 <script>
-import LeftMenu from './components/Left-menu'
-import Header from './components/Header'
-import { mapActions, mapGetters } from 'vuex'
+import LeftMenu from "./components/Left-menu";
+import Header from "./components/Header";
+import { mapActions, mapGetters } from "vuex";
 export default {
-  name: 'Home',
+  name: "Home",
   methods: {
-    ...mapActions(['fetchInfo', 'fetchProducts']),
+    ...mapActions(["fetchInfo", "fetchProducts"]),
   },
   computed: {
-    ...mapGetters(['info']),
+    ...mapGetters(["info"]),
   },
   async mounted() {
     if (!Object.keys(this.info).length) {
-      await this.fetchInfo()
+      await this.fetchInfo();
     }
-    await this.fetchProducts()
+    await this.fetchProducts();
   },
   components: {
     LeftMenu,
     Header,
   },
-}
+};
 </script>
 
 <style lang="scss">
-@import '~materialize-css/dist/css/materialize.min.css';
-@import './assets/app.css';
+@import "~materialize-css/dist/css/materialize.min.css";
+@import "./style/app.css";
 </style>
